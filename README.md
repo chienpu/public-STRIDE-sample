@@ -10,8 +10,8 @@ This repository contains selected artifacts from the **STRIDE (Semantic Task-Dri
 
 | Folder/File | Description |
 |-------------|-------------|
-| `ontology/` | Sample Neo4j ontology schema (JSON) and RDF-style mapping |
-| `python/`   | Key automation scripts for anomaly detection and reasoning |
+| `ontology-guided-schema/` | Sample Neo4j ontology schema (JSON) and RDF-style mapping |
+| `python-sample/`   | Key automation scripts for anomaly detection and reasoning |
 | `images/`   | Framework architecture, BPMN workflow, and RDF graph illustrations |
 | `data-sample/` | Minimal mock CSV datasets used in ontology import |
 | `README.md` | This document |
