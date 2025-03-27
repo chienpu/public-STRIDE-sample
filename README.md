@@ -33,7 +33,7 @@ This repository contains selected artifacts from the **STRIDE (Semantic Task-Dri
 
 1. **View ontology schema**: See `ontology/neo4j_importer_model_sample.json`
 2. **Explore RDF-style alignment**: Check `images/STRIDE_RDF_graph.png`
-3. **Run logic**: Examine `python/Anomaly_Reasoning_Sample.py` (no external dependencies)
+3. **Run logic**: Examine python/Anomaly_Reasoning_Sample.py (self-contained reasoning logic for anomaly detection)
 4. **Load sample data**: Browse `data-sample/*.csv` (e.g., sensors, anomalies)
 5. **Refer to architecture**: Open diagrams in `images/` folder
 
@@ -49,5 +49,5 @@ This repository supports the manuscript:
 ## 📩 Contact
 
 Maintained by [chienpu](https://github.com/chienpu).  
-For academic use or collaboration inquiries, please contact via the manuscript’s corresponding author info.
+For academic use or collaboration questions, please contact me via [chienpu@gmail.com](mailto:chienpu@gmail.com).
 
