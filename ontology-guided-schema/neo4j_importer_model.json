@@ -1,0 +1,727 @@
+{
+  "version": "2.3.1-beta.0",
+  "visualisation": {
+    "nodes": [
+      {
+        "id": "n:1",
+        "position": {
+          "x": -137.88014378805354,
+          "y": 1.7509386890835437
+        }
+      },
+      {
+        "id": "n:2",
+        "position": {
+          "x": 21.096809534744658,
+          "y": 3.7624777620724568
+        }
+      },
+      {
+        "id": "n:4",
+        "position": {
+          "x": -64.0036567169301,
+          "y": 109.5440435597458
+        }
+      },
+      {
+        "id": "n:3",
+        "position": {
+          "x": 153.807708287445,
+          "y": 3.6882920715431196
+        }
+      },
+      {
+        "id": "n:5",
+        "position": {
+          "x": -39.59104623052428,
+          "y": -104.81518564548394
+        }
+      },
+      {
+        "id": "n:6",
+        "position": {
+          "x": 286.91374204496077,
+          "y": 2.6686459437160663
+        }
+      },
+      {
+        "id": "n:7",
+        "position": {
+          "x": 422.4574602821402,
+          "y": 2.8194713091020773
+        }
+      },
+      {
+        "id": "n:9",
+        "position": {
+          "x": 120.0489993545034,
+          "y": -110.47852437382963
+        }
+      },
+      {
+        "id": "n:10",
+        "position": {
+          "x": 259.23310668464103,
+          "y": -105.40518159058527
+        }
+      },
+      {
+        "id": "n:11",
+        "position": {
+          "x": 388.0430695589519,
+          "y": -98.73745204355703
+        }
+      },
+      {
+        "id": "n:8",
+        "position": {
+          "x": 522.7396524918272,
+          "y": 111.94787086085151
+        }
+      },
+      {
+        "id": "n:12",
+        "position": {
+          "x": 361.8054669892727,
+          "y": 107.82773213397071
+        }
+      },
+      {
+        "id": "n:14",
+        "position": {
+          "x": 232.21518622149543,
+          "y": 110.01719544507684
+        }
+      },
+      {
+        "id": "n:13",
+        "position": {
+          "x": 526.667664601783,
+          "y": -98.69860272068532
+        }
+      },
+      {
+        "id": "n:15",
+        "position": {
+          "x": 57.54242019352559,
+          "y": 110.93922783005142
+        }
+      },
+      {
+        "id": "n:16",
+        "position": {
+          "x": -180.52867818005947,
+          "y": 109.84583494064132
+        }
+      }
+    ]
+  },
+  "dataModel": {
+    "version": "2.3.1-beta.0",
+    "graphSchemaRepresentation": {
+      "version": "1.0.0",
+      "graphSchema": {
+        "nodeLabels": [
+          {
+            "$id": "nl:1",
+            "token": "Sensor",
+            "properties": []
+          },
+          {
+            "$id": "nl:2",
+            "token": "Performance Data",
+            "properties": []
+          },
+          {
+            "$id": "nl:4",
+            "token": "Building Component",
+            "properties": [
+              {
+                "$id": "p:1",
+                "token": "GlobalId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:2",
+                "token": "LastUpdatedDate",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:3",
+                "token": "TypeOfBC",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:4",
+                "token": "Name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:5",
+                "token": "Location",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:6",
+                "token": "Floor",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:7",
+                "token": "Sponsor",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:3",
+            "token": "Anomaly ",
+            "properties": []
+          },
+          {
+            "$id": "nl:5",
+            "token": "I1_Dataset Accuracy Log",
+            "properties": []
+          },
+          {
+            "$id": "nl:6",
+            "token": "Generated Task",
+            "properties": []
+          },
+          {
+            "$id": "nl:7",
+            "token": "Visualized Task",
+            "properties": []
+          },
+          {
+            "$id": "nl:9",
+            "token": "I2_DataUpdateLatency",
+            "properties": []
+          },
+          {
+            "$id": "nl:10",
+            "token": "I3_AnomalyDetectionAccuracy\t",
+            "properties": []
+          },
+          {
+            "$id": "nl:11",
+            "token": "I4_MaintenanceTaskRate",
+            "properties": []
+          },
+          {
+            "$id": "nl:8",
+            "token": "Responsible Party",
+            "properties": []
+          },
+          {
+            "$id": "nl:12",
+            "token": "Completion Check",
+            "properties": []
+          },
+          {
+            "$id": "nl:14",
+            "token": "I6_Anomaly Resolution Rate",
+            "properties": []
+          },
+          {
+            "$id": "nl:13",
+            "token": "I5_QueryResponseTime",
+            "properties": []
+          },
+          {
+            "$id": "nl:15",
+            "token": "IFC Component",
+            "properties": []
+          },
+          {
+            "$id": "nl:16",
+            "token": "COBie Data",
+            "properties": []
+          }
+        ],
+        "relationshipTypes": [
+          {
+            "$id": "rt:3",
+            "token": "ASSOCIATES_WITH",
+            "properties": []
+          },
+          {
+            "$id": "rt:1",
+            "token": "GENERATES",
+            "properties": []
+          },
+          {
+            "$id": "rt:4",
+            "token": "CONTAINS",
+            "properties": []
+          },
+          {
+            "$id": "rt:5",
+            "token": "MAPS_SENSOR_DATA",
+            "properties": []
+          },
+          {
+            "$id": "rt:8",
+            "token": "TRIGGERS",
+            "properties": []
+          },
+          {
+            "$id": "rt:9",
+            "token": "TRANSFORMS_INTO",
+            "properties": []
+          },
+          {
+            "$id": "rt:7",
+            "token": "VALIDATE_ONTOLOGY",
+            "properties": []
+          },
+          {
+            "$id": "rt:2",
+            "token": "MONITORS_LATENCY",
+            "properties": []
+          },
+          {
+            "$id": "rt:6",
+            "token": "MEASURES_DETECTION",
+            "properties": []
+          },
+          {
+            "$id": "rt:10",
+            "token": "ASSIGNS_TO",
+            "properties": []
+          },
+          {
+            "$id": "rt:12",
+            "token": "REPORTS",
+            "properties": []
+          },
+          {
+            "$id": "rt:13",
+            "token": "MEASURES",
+            "properties": []
+          },
+          {
+            "$id": "rt:11",
+            "token": "EVALUATES",
+            "properties": []
+          },
+          {
+            "$id": "rt:14",
+            "token": "TRACKS_QUERY_TIME",
+            "properties": []
+          },
+          {
+            "$id": "rt:15",
+            "token": "REPRESENTS",
+            "properties": []
+          },
+          {
+            "$id": "rt:16",
+            "token": "DOCUMENTS",
+            "properties": []
+          }
+        ],
+        "nodeObjectTypes": [
+          {
+            "$id": "n:1",
+            "labels": [
+              {
+                "$ref": "#nl:1"
+              }
+            ]
+          },
+          {
+            "$id": "n:2",
+            "labels": [
+              {
+                "$ref": "#nl:2"
+              }
+            ]
+          },
+          {
+            "$id": "n:4",
+            "labels": [
+              {
+                "$ref": "#nl:4"
+              }
+            ]
+          },
+          {
+            "$id": "n:3",
+            "labels": [
+              {
+                "$ref": "#nl:3"
+              }
+            ]
+          },
+          {
+            "$id": "n:5",
+            "labels": [
+              {
+                "$ref": "#nl:5"
+              }
+            ]
+          },
+          {
+            "$id": "n:6",
+            "labels": [
+              {
+                "$ref": "#nl:6"
+              }
+            ]
+          },
+          {
+            "$id": "n:7",
+            "labels": [
+              {
+                "$ref": "#nl:7"
+              }
+            ]
+          },
+          {
+            "$id": "n:9",
+            "labels": [
+              {
+                "$ref": "#nl:9"
+              }
+            ]
+          },
+          {
+            "$id": "n:10",
+            "labels": [
+              {
+                "$ref": "#nl:10"
+              }
+            ]
+          },
+          {
+            "$id": "n:11",
+            "labels": [
+              {
+                "$ref": "#nl:11"
+              }
+            ]
+          },
+          {
+            "$id": "n:8",
+            "labels": [
+              {
+                "$ref": "#nl:8"
+              }
+            ]
+          },
+          {
+            "$id": "n:12",
+            "labels": [
+              {
+                "$ref": "#nl:12"
+              }
+            ]
+          },
+          {
+            "$id": "n:14",
+            "labels": [
+              {
+                "$ref": "#nl:14"
+              }
+            ]
+          },
+          {
+            "$id": "n:13",
+            "labels": [
+              {
+                "$ref": "#nl:13"
+              }
+            ]
+          },
+          {
+            "$id": "n:15",
+            "labels": [
+              {
+                "$ref": "#nl:15"
+              }
+            ]
+          },
+          {
+            "$id": "n:16",
+            "labels": [
+              {
+                "$ref": "#nl:16"
+              }
+            ]
+          }
+        ],
+        "relationshipObjectTypes": [
+          {
+            "$id": "r:3",
+            "type": {
+              "$ref": "#rt:3"
+            },
+            "from": {
+              "$ref": "#n:4"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:1",
+            "type": {
+              "$ref": "#rt:1"
+            },
+            "from": {
+              "$ref": "#n:1"
+            },
+            "to": {
+              "$ref": "#n:2"
+            }
+          },
+          {
+            "$id": "r:4",
+            "type": {
+              "$ref": "#rt:4"
+            },
+            "from": {
+              "$ref": "#n:2"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          },
+          {
+            "$id": "r:5",
+            "type": {
+              "$ref": "#rt:5"
+            },
+            "from": {
+              "$ref": "#n:4"
+            },
+            "to": {
+              "$ref": "#n:2"
+            }
+          },
+          {
+            "$id": "r:8",
+            "type": {
+              "$ref": "#rt:8"
+            },
+            "from": {
+              "$ref": "#n:3"
+            },
+            "to": {
+              "$ref": "#n:6"
+            }
+          },
+          {
+            "$id": "r:9",
+            "type": {
+              "$ref": "#rt:9"
+            },
+            "from": {
+              "$ref": "#n:6"
+            },
+            "to": {
+              "$ref": "#n:7"
+            }
+          },
+          {
+            "$id": "r:7",
+            "type": {
+              "$ref": "#rt:7"
+            },
+            "from": {
+              "$ref": "#n:5"
+            },
+            "to": {
+              "$ref": "#n:1"
+            }
+          },
+          {
+            "$id": "r:2",
+            "type": {
+              "$ref": "#rt:2"
+            },
+            "from": {
+              "$ref": "#n:9"
+            },
+            "to": {
+              "$ref": "#n:2"
+            }
+          },
+          {
+            "$id": "r:6",
+            "type": {
+              "$ref": "#rt:6"
+            },
+            "from": {
+              "$ref": "#n:10"
+            },
+            "to": {
+              "$ref": "#n:3"
+            }
+          },
+          {
+            "$id": "r:10",
+            "type": {
+              "$ref": "#rt:10"
+            },
+            "from": {
+              "$ref": "#n:7"
+            },
+            "to": {
+              "$ref": "#n:8"
+            }
+          },
+          {
+            "$id": "r:12",
+            "type": {
+              "$ref": "#rt:12"
+            },
+            "from": {
+              "$ref": "#n:8"
+            },
+            "to": {
+              "$ref": "#n:12"
+            }
+          },
+          {
+            "$id": "r:13",
+            "type": {
+              "$ref": "#rt:13"
+            },
+            "from": {
+              "$ref": "#n:14"
+            },
+            "to": {
+              "$ref": "#n:12"
+            }
+          },
+          {
+            "$id": "r:11",
+            "type": {
+              "$ref": "#rt:11"
+            },
+            "from": {
+              "$ref": "#n:11"
+            },
+            "to": {
+              "$ref": "#n:6"
+            }
+          },
+          {
+            "$id": "r:14",
+            "type": {
+              "$ref": "#rt:14"
+            },
+            "from": {
+              "$ref": "#n:13"
+            },
+            "to": {
+              "$ref": "#n:7"
+            }
+          },
+          {
+            "$id": "r:15",
+            "type": {
+              "$ref": "#rt:15"
+            },
+            "from": {
+              "$ref": "#n:15"
+            },
+            "to": {
+              "$ref": "#n:4"
+            }
+          },
+          {
+            "$id": "r:16",
+            "type": {
+              "$ref": "#rt:16"
+            },
+            "from": {
+              "$ref": "#n:16"
+            },
+            "to": {
+              "$ref": "#n:4"
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "$id": "c:1",
+            "name": "GlobalId_Building_Component_uniq",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:4"
+            },
+            "properties": [
+              {
+                "$ref": "#p:1"
+              }
+            ]
+          }
+        ],
+        "indexes": [
+          {
+            "$id": "i:1",
+            "name": "GlobalId_Building_Component_uniq",
+            "indexType": "default",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:4"
+            },
+            "properties": [
+              {
+                "$ref": "#p:1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "graphSchemaExtensionsRepresentation": {
+      "nodeKeyProperties": [
+        {
+          "node": {
+            "$ref": "#n:4"
+          },
+          "keyProperty": {
+            "$ref": "#p:1"
+          }
+        }
+      ]
+    },
+    "graphMappingRepresentation": {
+      "dataSourceSchema": {
+        "type": null,
+        "tableSchemas": []
+      },
+      "nodeMappings": [],
+      "relationshipMappings": []
+    },
+    "configurations": {
+      "idsToIgnore": []
+    }
+  }
+}
