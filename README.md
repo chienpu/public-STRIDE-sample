@@ -52,7 +52,7 @@ This repository includes key sample files from the STRIDE prototype to support j
 ## 📎 Related Publication
 
 This repository supports the manuscript:  
-**"Ontology-Driven Intelligent Automation for Predictive Maintenance in Smart Facility Management"** (submitted to *Advanced Engineering Informatics*).
+**"STRIDE: A Semantic Reasoning Framework for Facility Maintenance Integration and Automation"** (submitted to *Advanced Engineering Informatics*).
 
 ---
 
