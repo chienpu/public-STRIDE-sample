@@ -1,6 +1,6 @@
 # STRIDE Sample Repository for Journal Review
 
-This repository contains selected artifacts from the **STRIDE (Semantic Task-Driven Reasoning and Integration for Data-Driven Engineering)** framework. It supports journal peer review by demonstrating the core concepts of ontology-driven predictive maintenance using Neo4j and Python.
+This repository contains selected artifacts from the **STRIDE (Semantic Trigger Reasoning and Integration for Data-Driven Engineering)** framework. It supports journal peer review by demonstrating the core concepts of ontology-driven predictive maintenance using Neo4j and Python.
 
 > 🔒 This is a **public sample**. Proprietary and full-scale datasets are omitted for privacy and intellectual property considerations.
 
