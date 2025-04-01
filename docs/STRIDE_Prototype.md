@@ -69,6 +69,62 @@ See `evaluation/validation_metrics.xlsx` for test results and detailed methods.
 
 ---
 
+## 🧪 Minimal Reproducible Examples
+
+Two lightweight examples are included to demonstrate STRIDE’s semantic reasoning logic and Neo4j-based query workflows.
+
+---
+
+### 📌 Example 1: Energy Consumption Anomaly Detection
+
+Detects excessive energy usage (1.5× above average) and automatically generates a `MaintenanceTask` node.
+
+- **Relationships Used**: `[:MONITORS]`, `[:GENERATES]`
+- **Cypher Logic**:
+
+```cypher
+MATCH (s:Sensor)-[:MONITORS]->(c:Chiller)
+WHERE s.type = 'Energy_Consumption' AND s.value > 1.5 * c.avg_energy
+RETURN c.Chiller_ID, s.value, c.avg_energy
+```
+
+- **Files Required**:
+  - `Sensor_Data_300.csv`
+  - `Anomaly_Data_300.csv`
+  - `Edge_MAPS_SENSOR_DATA.csv`
+  - `Edge_GENERATES.csv`
+  - `BuildingComponent_Dataset.csv`
+
+---
+
+### 📌 Example 2: Critical Maintenance Workflow (Composite Rule)
+
+Combines high energy and temperature anomalies to trigger a high-priority `MaintenanceTask`.
+
+- **Relationships Used**: `[:MONITORS]`, `[:DETECTED_BY]`, `[:TRIGGERS]`
+- **Cypher Logic**:
+
+```cypher
+MATCH (s1:Sensor)-[:MONITORS]->(c:BuildingComponent)
+WHERE s1.type = 'Energy_Consumption' AND s1.value > 1.5 * c.avg_energy
+MATCH (s2:Sensor)-[:MONITORS]->(c)
+WHERE s2.type = 'Temperature' AND s2.value > 33
+MERGE (a:Anomaly {type: 'Critical'})
+MERGE (a)-[:DETECTED_BY]->(s1)
+MERGE (a)-[:DETECTED_BY]->(s2)
+MERGE (a)-[:ASSOCIATES_WITH]->(c)
+MERGE (a)-[:TRIGGERS]->(:MaintenanceTask {priority: 'High'})
+RETURN c.ComponentId, a.type
+```
+
+- **Files Required**:
+  - `Sensor_Data_300.csv`
+  - `Performance_Data_with_Anomly_300.csv`
+  - `Anomaly_Data_300.csv`
+  - `Edge_GENERATES.csv`
+
+---
+
 ## 📂 File Structure
 
 ```
