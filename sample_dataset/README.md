@@ -2,22 +2,37 @@
 
 This folder contains a simplified example dataset used to demonstrate the STRIDE framework's ontology-based data integration and reasoning capabilities.
 
-## Contents
+## Minimal Reproducible Examples
 
-- **sensor_data.csv** – Simulated IoT sensor readings (e.g., temperature, energy consumption)
-- **component_metadata.csv** – Metadata of building components from BIM or COBie sources
-- **performance_thresholds.csv** – Predefined thresholds for triggering anomaly detection
-- **task_mapping.csv** – Mapping rules for converting anomaly types into maintenance tasks
+This repository includes two minimal examples to help reviewers understand the semantic reasoning and automation capabilities of STRIDE:
 
-## Purpose
+### 1. Energy Consumption Anomaly Detection
 
-These files support the evaluation of STRIDE's ability to:
-- Ingest heterogeneous datasets
-- Detect anomalies based on threshold logic
-- Automatically generate maintenance tasks
-- Visualize and trace data relationships via Neo4j
+Detects energy usage exceeding 1.5× the average and automatically generates a `MaintenanceTask`.
+
+- **Key Relationships**: `[:MONITORS]`, `[:GENERATES]`
+- **Cypher Query**: See [Listing 1](../docs/STRIDE_Prototype.md#listing-1)
+- **Dataset Files**:
+  - `Sensor_Data_300.csv`
+  - `Anomaly_Data_300.csv`
+  - `Edge_MAPS_SENSOR_DATA.csv`
+  - `Edge_GENERATES.csv`
+  - `BuildingComponent_Dataset.csv`
+
+### 2. Critical Maintenance Workflow (Composite Rule)
+
+Combines abnormal energy and temperature readings to trigger a high-priority task.
+
+- **Key Relationships**: `[:MONITORS]`, `[:DETECTED_BY]`, `[:TRIGGERS]`
+- **Cypher Query**: See [Listing 2](../docs/STRIDE_Prototype.md#listing-2)
+- **Dataset Files**:
+  - `Sensor_Data_300.csv`
+  - `Performance_Data_with_Anomly_300.csv`
+  - `Anomaly_Data_300.csv`
+  - `Edge_GENERATES.csv`
 
 ## License
 
 This dataset is provided for academic and review purposes only.
+MIT License 
 

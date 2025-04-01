@@ -12,7 +12,7 @@ This repository contains selected artifacts from the **STRIDE (Semantic Trigger 
 |-------------------------|--------------------------------------------------------------------|
 | `ontology-guided-schema/` | Sample Neo4j schema (JSON) and RDF-style ontology mapping           |
 | `python-sample/`        | Key scripts for anomaly generation, detection, and logging         |
-| `data-sample/`          | Mock datasets (CSV) used for ontology population and testing       |
+| `sample_dataset/`          | Mock datasets (CSV) used for ontology population and testing       |
 | `docs/`                 | Prototype documentation and experiment overview                   |
 | `images/`               | Diagrams: architecture layers, BPMN workflows, RDF mapping         |
 | `README.md`             | This document                                                      |
@@ -33,19 +33,41 @@ This repository contains selected artifacts from the **STRIDE (Semantic Trigger 
 
 ## 🛠️ How to Use
 
-This repository includes key sample files from the STRIDE prototype to support journal review and reproduction of core results.
-1. **Ontology Schema**  
-   → `ontology-guided-schema/neo4j_importer_model_sample.json`
-2. **Prototype Overview**  
-   → `docs/STRIDE_Prototype.md` (explains architecture and evaluation datasets)
-3. **Anomaly Detection Logic**  
-   → `python-sample/Anomaly_Reasoning_Sample.py`
-4. **Data Generation Script**  
-   → `python-sample/generate_anomaly_data.py`
-5. **Sample CSV Data**  
-   → `data-sample/` (e.g., sensors, anomalies, logs)
-6. **Diagrams**  
-   → `images/` (architecture and RDF mapping visuals)
+This repository includes minimal files required to reproduce Listing 1 and Listing 2 in the STRIDE prototype.
+
+### 1. **Ontology Schema**
+- `ontology-guided-schema/neo4j_importer_model.json`  
+  Neo4j Data Importer JSON schema defining node and relationship types used in STRIDE.
+
+### 2. **Prototype Overview Document**
+- `docs/STRIDE_Prototype.md`  
+  Describes the STRIDE architecture and references Listing 1 and 2 with context and Cypher logic.
+
+### 3. **Scripts for Listing 1 & 2**
+- `python-sample/Generate Anomaly Data.py`  
+  Generates temperature and energy-based anomaly data.
+- `python-sample/Generate MaintenanceTask.py`  
+  Automatically creates task nodes when anomalies are detected.
+- `python-sample/Generate_TRIGGERS.py`  
+  Establishes semantic `[:TRIGGERS]` edges between anomalies and tasks.
+
+### 4. **Sample Datasets**
+- `sample_dataset/`  
+  Required files:
+  - `Sensor_Data_300.csv`
+  - `Anomaly_Data_300.csv`
+  - `Performance_Data_with_Anomly_300.csv`
+  - `Edge_MAPS_SENSOR_DATA.csv`
+  - `Edge_GENERATES.csv`
+  - `BuildingComponent_Dataset.csv`
+
+These support:
+- **Listing 1**: Energy Consumption Anomaly Detection
+- **Listing 2**: Critical Maintenance Workflow (composite rule)
+
+### 5. **System and Ontology Diagrams**
+- `images/` *(optional folder)*  
+  Includes system architecture and RDF-aligned ontology visualization used in the manuscript.
    
 ---
 
