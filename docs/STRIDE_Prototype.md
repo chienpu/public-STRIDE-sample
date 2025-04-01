@@ -128,17 +128,19 @@ RETURN c.ComponentId, a.type
 ## 📂 File Structure
 
 ```
-python-sample/
-├── generate_anomaly_data.py   # Script to generate test datasets
+docs/ ├── STRIDE_Prototype.md # Main implementation and validation document
 
-data-sample/
-├── anomaly_data.csv           # Output dataset
+ontology-guided-schema/ ├── [Ontology Files] # Ontology schema for Neo4j data mapping
 
-ontology-guided-schema/
-├── neo4j_import_schema.json   # Neo4j Data Importer schema
+python-sample/ ├── generate_anomaly_data.py # Script to simulate IoT sensor data
 
-docs/
-└── STRIDE_Prototype.md        # This document
+sample_dataset/ ├── Sensor_Data_300.csv ├── Anomaly_Data_300.csv ├── Performance_Data_with_Anomly_300.csv ├── Edge_MAPS_SENSOR_DATA.csv ├── Edge_GENERATES.csv ├── BuildingComponent_Dataset.csv ├── README.md # Dataset description and scenario details
+
+LICENSE README.md # Repository overview and license info
+
+Copy
+Edit
+
 ```
 
 ---
