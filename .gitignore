@@ -87,7 +87,7 @@ ipython_config.py
 .dmypy.json
 dmypy.json
 
-# Poetry / Pipenv / PDM / UV (lock files if needed)
+# Poetry / Pipenv / PDM / UV
 .pdm.toml
 .pdm-python
 .pdm-build/
@@ -113,14 +113,14 @@ venv.bak/
 # PyPI
 .pypirc
 
-# JetBrains (optional)
+# JetBrains
 # .idea/
 
 # ----------------------------
 # STRIDE Prototype Specific
 # ----------------------------
 
-# 📁 Dataset CSVs (can regenerate or are too large)
+# 📁 Dataset CSVs
 sample_dataset/*.csv
 data-sample/*.csv
 
@@ -129,14 +129,14 @@ data-sample/*.csv
 *.bak
 *.log
 
-# 📁 Image outputs (optional)
+# 📁 Image outputs
 images/*.png
 images/*.jpg
 images/*.svg
 
-# 📁 Evaluation and plots (if not included in journal submission)
+# 📁 Evaluation and plots
 evaluation/*.csv
 evaluation/*.xlsx
 
-# 📄 Notebook exclusions (if not part of public release)
+# 📄 Notebook exclusions
 *.ipynb
