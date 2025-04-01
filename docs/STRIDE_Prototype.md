@@ -132,7 +132,8 @@ docs/
 ├── STRIDE_Prototype.md # Main implementation and validation document
 
 ontology-guided-schema/
-├── [Ontology Files] # Ontology schema for Neo4j data mapping
+├── neo4j_importer_model.json # Neo4j Data Importer schema
+├── README.md # Explanation of ontology and import config
 
 python-sample/
 ├── generate_anomaly_data.py # Script to simulate IoT sensor data
