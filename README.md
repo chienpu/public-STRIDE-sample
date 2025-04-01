@@ -1,6 +1,6 @@
 # STRIDE Sample Repository for Journal Review
 
-This repository contains selected artifacts from the **STRIDE (Semantic Task-Driven Reasoning and Integration for Data-Driven Engineering)** framework. It supports journal peer review by demonstrating the core concepts of ontology-driven predictive maintenance using Neo4j and Python.
+This repository contains selected artifacts from the **STRIDE (Semantic Trigger Reasoning and Integration for Data-Driven Engineering)** framework. It supports journal peer review by demonstrating the core concepts of ontology-driven predictive maintenance using Neo4j and Python.
 
 > 🔒 This is a **public sample**. Proprietary and full-scale datasets are omitted for privacy and intellectual property considerations.
 
@@ -8,14 +8,16 @@ This repository contains selected artifacts from the **STRIDE (Semantic Task-Dri
 
 ## 🧭 Repository Structure
 
-| Folder/File | Description |
-|-------------|-------------|
-| `ontology-guided-schema/` | Sample Neo4j ontology schema (JSON) and RDF-style mapping |
-| `python-sample/`   | Key automation scripts for anomaly detection and reasoning |
-| `images/`   | Framework architecture, BPMN workflow, and RDF graph illustrations |
-| `data-sample/` | Minimal mock CSV datasets used in ontology import |
-| `README.md` | This document |
-| `LICENSE`   | MIT License for public use |
+| Folder/File             | Description                                                        |
+|-------------------------|--------------------------------------------------------------------|
+| `ontology-guided-schema/` | Sample Neo4j schema (JSON) and RDF-style ontology mapping           |
+| `python-sample/`        | Key scripts for anomaly generation, detection, and logging         |
+| `data-sample/`          | Mock datasets (CSV) used for ontology population and testing       |
+| `docs/`                 | Prototype documentation and experiment overview                   |
+| `images/`               | Diagrams: architecture layers, BPMN workflows, RDF mapping         |
+| `README.md`             | This document                                                      |
+| `LICENSE`               | MIT License for academic and non-commercial use                   |
+
 
 ---
 
@@ -31,18 +33,26 @@ This repository contains selected artifacts from the **STRIDE (Semantic Task-Dri
 
 ## 🛠️ How to Use
 
-1. **View ontology schema**: See `ontology/neo4j_importer_model_sample.json`
-2. **Explore RDF-style alignment**: Check `images/STRIDE_RDF_graph.png`
-3. **Run logic**: Examine python/Anomaly_Reasoning_Sample.py (self-contained reasoning logic for anomaly detection)
-4. **Load sample data**: Browse `data-sample/*.csv` (e.g., sensors, anomalies)
-5. **Refer to architecture**: Open diagrams in `images/` folder
-
+This repository includes key sample files from the STRIDE prototype to support journal review and reproduction of core results.
+1. **Ontology Schema**  
+   → `ontology-guided-schema/neo4j_importer_model_sample.json`
+2. **Prototype Overview**  
+   → `docs/STRIDE_Prototype.md` (explains architecture and evaluation datasets)
+3. **Anomaly Detection Logic**  
+   → `python-sample/Anomaly_Reasoning_Sample.py`
+4. **Data Generation Script**  
+   → `python-sample/generate_anomaly_data.py`
+5. **Sample CSV Data**  
+   → `data-sample/` (e.g., sensors, anomalies, logs)
+6. **Diagrams**  
+   → `images/` (architecture and RDF mapping visuals)
+   
 ---
 
 ## 📎 Related Publication
 
 This repository supports the manuscript:  
-**"Ontology-Driven Intelligent Automation for Predictive Maintenance in Smart Facility Management"** (submitted to *Advanced Engineering Informatics*).
+**"STRIDE: A Semantic Framework for Ontology-Guided Integration and Predictive Maintenance Automation"** (submitted to *Advanced Engineering Informatics*).
 
 ---
 
