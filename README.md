@@ -12,7 +12,7 @@ This repository contains selected artifacts from the **STRIDE (Semantic Trigger 
 |-------------------------|--------------------------------------------------------------------|
 | `ontology-guided-schema/` | Sample Neo4j schema (JSON) and RDF-style ontology mapping           |
 | `python-sample/`        | Key scripts for anomaly generation, detection, and logging         |
-| `data-sample/`          | Mock datasets (CSV) used for ontology population and testing       |
+| `sample_dataset/`          | Mock datasets (CSV) used for ontology population and testing       |
 | `docs/`                 | Prototype documentation and experiment overview                   |
 | `images/`               | Diagrams: architecture layers, BPMN workflows, RDF mapping         |
 | `README.md`             | This document                                                      |
@@ -33,19 +33,40 @@ This repository contains selected artifacts from the **STRIDE (Semantic Trigger 
 
 ## 🛠️ How to Use
 
-This repository includes key sample files from the STRIDE prototype to support journal review and reproduction of core results.
+This repository includes curated files from the STRIDE prototype to support journal review, reproducibility, and semantic reasoning demonstrations.
+
 1. **Ontology Schema**  
-   → `ontology-guided-schema/neo4j_importer_model_sample.json`
-2. **Prototype Overview**  
-   → `docs/STRIDE_Prototype.md` (explains architecture and evaluation datasets)
-3. **Anomaly Detection Logic**  
-   → `python-sample/Anomaly_Reasoning_Sample.py`
-4. **Data Generation Script**  
-   → `python-sample/generate_anomaly_data.py`
-5. **Sample CSV Data**  
-   → `data-sample/` (e.g., sensors, anomalies, logs)
-6. **Diagrams**  
-   → `images/` (architecture and RDF mapping visuals)
+   → `ontology-guided-schema/neo4j_importer_model.json`  
+   Neo4j Data Importer JSON schema defining node and relationship types used in STRIDE.
+
+2. **Prototype Overview Document**  
+   → `docs/STRIDE_Prototype.md`  
+   Provides system architecture, validation strategy, and walkthroughs of semantic logic used in **Listing 1** and **Listing 2**.
+
+3. **Semantic Reasoning Scripts**  
+   → `python-sample/Anomaly_Reasoning_Sample.py` *(optional future file)*  
+   Demonstrates rule-based reasoning using Neo4j Cypher queries. *(You can add this file if desired.)*
+
+4. **Anomaly Data Generator**  
+   → `python-sample/generate_anomaly_data.py`  
+   Python script for generating synthetic sensor data and injecting labeled anomalies.
+
+5. **Sample Datasets for Listings**  
+   → `sample_dataset/`  
+   Includes files required to run:
+   - **Listing 1: Energy Consumption Anomaly Detection**
+   - **Listing 2: Critical Maintenance Workflow**  
+   Files include:
+   - `Sensor_Data_300.csv`
+   - `Anomaly_Data_300.csv`
+   - `Performance_Data_with_Anomly_300.csv`
+   - `Edge_MAPS_SENSOR_DATA.csv`
+   - `Edge_GENERATES.csv`
+   - `BuildingComponent_Dataset.csv`
+
+6. **System and Ontology Diagrams**  
+   → `images/` *(optional folder to include)*  
+   Includes architecture diagrams and RDF-aligned schema visualizations (referenced in the manuscript).
    
 ---
 
