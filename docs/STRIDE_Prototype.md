@@ -75,7 +75,7 @@ Two lightweight examples are included to demonstrate STRIDE’s semantic reasoni
 
 ---
 
-### 📌 Example 1: Energy Consumption Anomaly Detection
+### 📌 Listing 1: Energy Consumption Anomaly Detection
 
 Detects excessive energy usage (1.5× above average) and automatically generates a `MaintenanceTask` node.
 
@@ -97,7 +97,7 @@ RETURN c.Chiller_ID, s.value, c.avg_energy
 
 ---
 
-### 📌 Example 2: Critical Maintenance Workflow (Composite Rule)
+### 📌 Listing 2: Critical Maintenance Workflow (Composite Rule)
 
 Combines high energy and temperature anomalies to trigger a high-priority `MaintenanceTask`.
 
