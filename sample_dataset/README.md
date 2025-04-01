@@ -11,7 +11,7 @@ This repository includes two minimal examples to help reviewers understand the s
 Detects energy usage exceeding 1.5× the average and automatically generates a `MaintenanceTask`.
 
 - **Key Relationships**: `[:MONITORS]`, `[:GENERATES]`
-- **Cypher Query**: See [Listing 1](docs/STRIDE_Prototype.md#listing-1)
+- **Cypher Query**: See [Listing 1](../docs/STRIDE_Prototype.md#listing-1)
 - **Dataset Files**:
   - `Sensor_Data_300.csv`
   - `Anomaly_Data_300.csv`
@@ -24,7 +24,7 @@ Detects energy usage exceeding 1.5× the average and automatically generates a `
 Combines abnormal energy and temperature readings to trigger a high-priority task.
 
 - **Key Relationships**: `[:MONITORS]`, `[:DETECTED_BY]`, `[:TRIGGERS]`
-- **Cypher Query**: See [Listing 2](docs/STRIDE_Prototype.md#listing-2)
+- **Cypher Query**: See [Listing 2](../docs/STRIDE_Prototype.md#listing-2)
 - **Dataset Files**:
   - `Sensor_Data_300.csv`
   - `Performance_Data_with_Anomly_300.csv`
