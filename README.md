@@ -33,40 +33,41 @@ This repository contains selected artifacts from the **STRIDE (Semantic Trigger 
 
 ## 🛠️ How to Use
 
-This repository includes curated files from the STRIDE prototype to support journal review, reproducibility, and semantic reasoning demonstrations.
+This repository includes minimal files required to reproduce Listing 1 and Listing 2 in the STRIDE prototype.
 
-1. **Ontology Schema**  
-   → `ontology-guided-schema/neo4j_importer_model.json`  
-   Neo4j Data Importer JSON schema defining node and relationship types used in STRIDE.
+### 1. **Ontology Schema**
+- `ontology-guided-schema/neo4j_importer_model.json`  
+  Neo4j Data Importer JSON schema defining node and relationship types used in STRIDE.
 
-2. **Prototype Overview Document**  
-   → `docs/STRIDE_Prototype.md`  
-   Provides system architecture, validation strategy, and walkthroughs of semantic logic used in **Listing 1** and **Listing 2**.
+### 2. **Prototype Overview Document**
+- `docs/STRIDE_Prototype.md`  
+  Describes the STRIDE architecture and references Listing 1 and 2 with context and Cypher logic.
 
-3. **Semantic Reasoning Scripts**  
-   → `python-sample/Anomaly_Reasoning_Sample.py` *(optional future file)*  
-   Demonstrates rule-based reasoning using Neo4j Cypher queries. *(You can add this file if desired.)*
+### 3. **Scripts for Listing 1 & 2**
+- `python-sample/Generate Anomaly Data.py`  
+  Generates temperature and energy-based anomaly data.
+- `python-sample/Generate MaintenanceTask.py`  
+  Automatically creates task nodes when anomalies are detected.
+- `python-sample/Generate_TRIGGERS.py`  
+  Establishes semantic `[:TRIGGERS]` edges between anomalies and tasks.
 
-4. **Anomaly Data Generator**  
-   → `python-sample/generate_anomaly_data.py`  
-   Python script for generating synthetic sensor data and injecting labeled anomalies.
+### 4. **Sample Datasets**
+- `sample_dataset/`  
+  Required files:
+  - `Sensor_Data_300.csv`
+  - `Anomaly_Data_300.csv`
+  - `Performance_Data_with_Anomly_300.csv`
+  - `Edge_MAPS_SENSOR_DATA.csv`
+  - `Edge_GENERATES.csv`
+  - `BuildingComponent_Dataset.csv`
 
-5. **Sample Datasets for Listings**  
-   → `sample_dataset/`  
-   Includes files required to run:
-   - **Listing 1: Energy Consumption Anomaly Detection**
-   - **Listing 2: Critical Maintenance Workflow**  
-   Files include:
-   - `Sensor_Data_300.csv`
-   - `Anomaly_Data_300.csv`
-   - `Performance_Data_with_Anomly_300.csv`
-   - `Edge_MAPS_SENSOR_DATA.csv`
-   - `Edge_GENERATES.csv`
-   - `BuildingComponent_Dataset.csv`
+These support:
+- **Listing 1**: Energy Consumption Anomaly Detection
+- **Listing 2**: Critical Maintenance Workflow (composite rule)
 
-6. **System and Ontology Diagrams**  
-   → `images/` *(optional folder to include)*  
-   Includes architecture diagrams and RDF-aligned schema visualizations (referenced in the manuscript).
+### 5. **System and Ontology Diagrams**
+- `images/` *(optional folder)*  
+  Includes system architecture and RDF-aligned ontology visualization used in the manuscript.
    
 ---
 
