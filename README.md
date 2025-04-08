@@ -74,7 +74,7 @@ These support:
 ## 📎 Related Publication
 
 This repository supports the manuscript:  
-**"STRIDE: A Semantic Framework for Ontology-Guided Integration and Predictive Maintenance Automation"** (submitted to *Advanced Engineering Informatics*).
+**"Semantic Reasoning and Integration for Automating Predictive Maintenance in Smart Facility Management"** (submitted to *Advanced Engineering Informatics*).
 
 ---
 
