@@ -1,0 +1,8 @@
+# For connecting to the Neo4j database
+neo4j==5.17.0
+
+# For making HTTP requests to the Power Automate API
+requests==2.31.0
+
+# For data handling (e.g., creating the .csv data files)
+pandas==2.2.0
