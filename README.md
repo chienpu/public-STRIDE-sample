@@ -74,7 +74,8 @@ These support:
 ## 📎 Related Publication
 
 This repository supports the manuscript:  
-**"Semantic Reasoning and Integration for Automating Predictive Maintenance in Smart Facility Management"** (submitted to *Advanced Engineering Informatics*).
+Huang, C.-P., & Hsieh, S.-H. (2026). **Semantic reasoning and integration for automating predictive maintenance in smart facility management**. Advanced Engineering Informatics, 71, 104240. https://doi.org/10.1016/j.aei.2025.104240
+
 
 ---
 
